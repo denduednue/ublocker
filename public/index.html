@@ -3,37 +3,35 @@
 <head>
   <title>unblocker</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- header font -->
-  <link href="//fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
-  
-  <!-- body font -->
-  <link href="//fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
   
   <style type="text/css">
     body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #000; /* Matches the input field background */
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-        input[type="text"] {
-            padding: 12px;
-            border: 1px solid #333;
-            border-radius: 20px;
-            background-color: #000;
-            color: #ccc;
-            width: 300px;
-            font-size: 16px;
-        }
-        .text-area {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    input[type="text"] {
+      padding: 12px;
+      border: 1px solid #333;
+      border-radius: 20px;
+      background-color: #000;
+      color: #ccc;
+      width: 300px;
+      font-size: 16px;
+    }
+    .text-area {
       border-radius: 10px;
       background-color: grey;
       color: white;
@@ -43,59 +41,74 @@
       margin: auto;
       display: block;
     }
-  
-    /* fonts */
-  
-  
-    /* colors */
-    body { background-color: #000306; color: white;}
-    .contain { background-color: #3F4038; border-color: #5B3E38}
-    a { color: #62BECB; }
-    a:hover {color: #82DEEB }
-
-	#error {  border:1px dotted white; background: brown; }
-    
-    /* stripes and borders */
-    
-    .contain { border-style: solid; border-width: 1px; border-radius: 10px;  -moz-border-radius: 10px;  -webkit-border-radius: 10px;  overflow:hidden;  /* otherwise the background image appears on top of the curved border */ }
-    
-    
-    /* layout */
-    body { text-align: center; }
-    .contain { width: 760px; margin: 40px auto; text-align: left;  max-width: calc(100% - 10px);}
-    
-    h2, h3, h4, h5, h6 { margin-bottom: 0;  }
-    ul { line-height: 150%; }
-    ul, p {  margin-top: 5px; margin-bottom: 0; }
-    .main, .footer { padding: 1px 10px 0 10px; }
-    
-    #error {display: none; padding: 5px 10px; margin: 30px 10px; }
-    
-    form ul { list-style-type: none; padding-left: 25px;}
-    input[type=text] { width: 640px; max-width: calc(100% - 8em) }
-    
-    .footer { position: relative; clear: both;}
-    .footer p { margin:0; position: absolute; bottom: 10px;  right: 10px; padding-left: 10px; }
-    
-    #google-ad {
-        text-align: center;
-        margin: 10px auto;
+    .contain {
+      width: 760px;
+      margin: 40px auto;
+      text-align: left;
+      max-width: calc(100% - 10px);
     }
-    @media(min-width: 768px) {
-        #google-ad {
-            margin: 0;
-            float:right; 
-            margin:4px 2px 2px 20px;
-        }
+    a {
+      color: #62BECB;
+    }
+    a:hover {
+      color: #82DEEB;
+    }
+    #error {
+      border: 1px dotted white;
+      background: brown;
+      display: none;
+      padding: 5px 10px;
+      margin: 30px 10px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 0;
+    }
+    ul {
+      line-height: 150%;
+    }
+    ul, p {
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+    .main, .footer {
+      padding: 1px 10px 0 10px;
+    }
+    form ul {
+      list-style-type: none;
+      padding-left: 25px;
+    }
+    input[type=text] {
+      width: 640px;
+      max-width: calc(100% - 8em);
+    }
+    .footer {
+      position: relative;
+      clear: both;
+    }
+    .footer p {
+      margin: 0;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      padding-left: 10px;
+    }
+    #google-ad {
+      text-align: center;
+      margin: 10px auto;
+    }
+    @media (min-width: 768px) {
+      #google-ad {
+        margin: 0;
+        float: right;
+        margin: 4px 2px 2px 20px;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="contain">
-  
     <div class="main">
-  
       <h1>Node Unblocker</h1>
       
       <div id="error"></div>
@@ -103,58 +116,58 @@
       <form action="no-js" method="get" id="unblocker-form">
         <p>
           <input type="text" id="url" name="url" autofocus="autofocus" 
-          style="padding: 12px; border: 1px solid #333; border-radius: 20px; background-color: #000; color: #ccc; width: 300px; font-size: 16px;" 
           placeholder="Search the web freely" />
-             <input type="submit" value="Go" style="padding: 5px 10px; background-color: #030303; color: white; border: 1px solid #4a4a4a; border-radius: 5px; cursor: pointer;" />
+          <input type="submit" value="Go" style="padding: 5px 10px; background-color: #030303; color: white; border: 1px solid #4a4a4a; border-radius: 5px; cursor: pointer;" />
         </p>             
       </form>
       
-<div id="google-ad">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Nodeunblocker.com -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
-     data-ad-client="ca-pub-9477050254721722"
-     data-ad-slot="3464697570"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  
+      <div id="google-ad">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Nodeunblocker.com -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-9477050254721722"
+             data-ad-slot="3464697570"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
   </div>
-	<script>
-		function $(id){
-			return document.getElementById(id);
-		}
-		
-		$('unblocker-form').onsubmit = function(){
-			var url = $('url').value;
-			if(url.substr(0,4) != "http"){
-				url = "http://" + url;
-			}
-			window.location = location.protocol + '//' + location.host + '/proxy/' + url;
-			return false;
-		};
-		
-		function checkError(){
-			var search = window.location.search;
-			var start = search.indexOf('error=');
-			if(start > -1){
-				var stop = search.indexOf('&', start);
-				if(stop == -1){ stop = undefined; }
-				// +6 for "error="
-				var err = search.substr(start+6, stop);
-                var $error = $('error');
-				$error.innerText = $error.textContent = decodeURIComponent(err);
-				$error.style.display = "block";
-			}
-		}
-    
-		window.onload = function() { 
-			$('url').focus(); 
-			checkError(); 
-		}
-	</script>
-  
-  
+
+  <script>
+    function $(id) {
+      return document.getElementById(id);
+    }
+
+    $('unblocker-form').onsubmit = function() {
+      var url = $('url').value;
+      if (url.substr(0, 4) != "http") {
+        url = "http://" + url;
+      }
+      window.location = location.protocol + '//' + location.host + '/proxy/' + url;
+      return false;
+    };
+
+    function checkError() {
+      var search = window.location.search;
+      var start = search.indexOf('error=');
+      if (start > -1) {
+        var stop = search.indexOf('&', start);
+        if (stop == -1) {
+          stop = undefined;
+        }
+        var err = search.substr(start + 6, stop);
+        var $error = $('error');
+        $error.innerText = $error.textContent = decodeURIComponent(err);
+        $error.style.display = "block";
+      }
+    }
+
+    window.onload = function() {
+      $('url').focus();
+      checkError();
+    }
+  </script>
 </body>
 </html>
