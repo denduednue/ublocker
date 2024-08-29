@@ -1,14 +1,3 @@
-/***************
- * node-unblocker: Web Proxy for evading firewalls and content filters.
- * 
- *
- *
- * This project is hosted on github:  https://github.com/nfriedly/nodeunblocker.com
- *
- * Made by Nathan Friedly - http://nfriedly.com
- * Modifyed by Manny Baez - https://github.com/xMannyGamingx
- * Released under the terms of the Affero GPL v3
- */
 
 
 var url = require('url');
@@ -82,5 +71,5 @@ app.get("/no-js", function(req, res) {
 const port = process.env.PORT || process.env.VCAP_APP_PORT || 8080;
 
 app.listen(port, function() {
-    console.log(`nublocker process listening at http://localhost:${port}/`);
+    console.log(`ublocker process listening at http://localhost:${port}/`);
 }).on("upgrade", unblocker.onUpgrade); // onUpgrade handles websockets
